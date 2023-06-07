@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>WebGL</title>
+    <style>
+        body {
+            background-color: #EEEEEE;
+        }
+    </style>
+
+    <script src="./Utils/trackball-rotator.js"></script>
+    <script src="./Utils/m4.js"></script>
+    <script src="./shader.gpu"></script>
+    <script src="./main.js"></script>
+
+</head>
+
+<body onload="init()">
+
+    <h2>WebGL stereo camera</h2>
+
+    <p id="message">Drag your mouse on the model to rotate it.<br>
+        (On a touch screen, you can use your finger.)</p>
+
+    <div>
+        <div>
+            <label for ="eye_separation">Eye separation</label>
+            <input id="eye_separation" type="range" min="0" max="200" step="1" value="70">
+            <span class="slider-value">0</span>
+        </div>
+        <div>
+            <label for ="field_of_view">Field of View</label>
+            <input id="field_of_view" type="range" min="0" max="3.14" step="0.02" value="1">
+            <span class="slider-value">0</span>
+        </div>
+        <div>
+            <label for ="near_clipping_distance">Near Clipping distance</label>
+            <input id="near_clipping_distance" type="range" min="0" max="20" step="0.25" value="10">
+            <span class="slider-value">0</span>
+        </div>
+        <div>
+            <label for ="convergence">Convergence</label>
+            <input id="convergence" type="range" min="100" max="2500" step="10" value="2000">
+            <span class="slider-value">0</span>
+        </div>
+    </div>
+
+    <div id="canvas-holder">
+        <canvas width="300" height="300" id="webglcanvas" style="background-color:red"></canvas>
+    </div>
+
+
+</body>
+
+</html>
