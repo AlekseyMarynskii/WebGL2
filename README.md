@@ -1,9 +1,10 @@
 # WebGL2
 
+1)Демонстрація роботи фільтра
 https://github.com/AlekseyMarynskii/WebGL2/assets/84384720/5068e646-be40-4d56-ad76-2f9f0a7768af
 
 
-
+2)
 https://github.com/AlekseyMarynskii/WebGL2/assets/84384720/a633d199-99c2-4c19-bf10-33c42ebbc627
 
 
